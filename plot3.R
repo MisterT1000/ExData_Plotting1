@@ -1,4 +1,9 @@
 library(data.table)
+
+fileurl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+download.file(fileurl, "exdata_data_household_power_consumption.zip")
+unzip("exdata_data_household_power_consumption.zip")
+
 hpc <-
   read.csv(
     file = "household_power_consumption.txt",
